@@ -6,8 +6,8 @@ export default function Home() {
   )
 }
 import React from 'react'
-import Hero from '../Components/Hero';
-import Navbar from "../Components/navbar";
+import Hero from '../Components/herostuff/Hero';
+import Navbar from "../Components/navbarstuff/navbar";
 export default function Home() {
   return (
     <div>
