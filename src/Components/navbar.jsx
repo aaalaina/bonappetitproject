@@ -1,18 +1,19 @@
-import React from 'react'
+import React from 'react';
+import {Link} from 'react-router-dom';
 
 export default function Navbar() {
   return (
-    //carousel of images
-    //image source: https://www.pexels.com/search/food/
-    //might need another dependency for this
-    //will this fuck up merging...? time will tell
-
-
-    //import navbar component here I think? Or can we do it on the app.js file?
-
-    //two buttons (technically) but they'll be stylized a links
-
-    //I'm using flexbox for the hero and the 
-    <div></div>
+    <div>
+      <div className="div1">
+        <ul>
+          <li><Link to="/Recipes">Recipes</Link></li>
+          <li><Link to="/Shop">Shop</Link></li>
+          <li><Link to="/Contact">Contact</Link></li>
+        </ul>
+      </div>
+      <div className="div2">
+      <h2>Bon Appétit</h2>
+      </div>
+    </div>
   )
 }
