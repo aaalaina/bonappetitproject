@@ -1,9 +1,10 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
+import 'navbar.css';
 
 export default function Navbar() {
   return (
-    <div>
+    <div className='Navbar'>
       <div className="div1">
         <ul>
           <li><Link to="/Recipes">Recipes</Link></li>

@@ -5,7 +5,7 @@ export default function Home() {
     <div>Home</div>
   )
 }
-import React from 'react'
+import React from 'react';
 import Hero from '../Components/herostuff/Hero';
 import Navbar from "../Components/navbarstuff/navbar";
 export default function Home() {
