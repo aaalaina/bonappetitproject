@@ -6,9 +6,14 @@ export default function Home() {
   )
 }
 import React from 'react'
-
+import Hero from '../Components/Hero';
+import Navbar from "../Components/navbar";
 export default function Home() {
   return (
-    <div>Home</div>
+    <div>
+<Navbar />
+<Hero />
+
+    </div>
   )
 }
