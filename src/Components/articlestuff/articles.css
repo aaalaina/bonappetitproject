@@ -1,0 +1,31 @@
+
+.articles-heading{
+    font-size: large;
+}
+
+.main-home{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+ .homeimg{
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+}
+
+.homesect{
+   width: 48%;
+
+}
+@media(max-width: 768px){
+    .homesect{
+        width: 90%;
+        margin: 0 auto;
+    }
+    .main-home{
+        flex-flow: column wrap;
+        
+    }
+}
