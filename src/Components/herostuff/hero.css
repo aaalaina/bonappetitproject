@@ -1,5 +1,36 @@
+
 .hero-img{
     height: 100vh;
-    background: url(./Images/Bonappetithero.jpg);
+    width: 90%;
+    margin: 5rem auto;
+    background: url(../../Images/Bonappetithero.jpg);
     background-size: cover;
+    border-radius: 15px;
+  }
+  .hero-overlay{
+    /* position:absolute; */
+    /* top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0; */
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #fff;
+    /* top: 50%;
+    left: 50%; */
+    z-index: 2;
+  }
+  .hero-container:hover .hero-overlay{
+    opacity: 0.5;
+  }
+  .hero-text{
+    /* position: absolute; */
+    color: #fff;
+    font-size: 20px;
+    /* -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); */
+    text-align: center;
   }

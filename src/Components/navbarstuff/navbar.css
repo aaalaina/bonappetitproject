@@ -1,15 +1,44 @@
-
+* {
+    text-decoration: none;
+    list-style: none;
+    color: inherit;
+  }
+@import url('https://fonts.googleapis.com/css2?family=Faustina&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Faustina&family=Jost:wght@300&display=swap');
 .Navbar{
 color: #ffff;
 background-color: #000;
-font: small-caps 1rem sans-serif;
+font: small-caps bold large 'Jost', sans-serif;
 
 width: 100%;
-height: 80px;
+/* height: 80px; */
 display: flex;
+align-items: center;
+justify-content: center;
 }
 
 
 .div1{
-    
+    flex: 50%;
+}
+.div1-ul{
+    display: flex;
+    flex-direction: row;
+    gap: 5%;
+}
+.Navbar .div2{
+    flex: 50%;
+    font: 2rem 'Faustina', serif;
+    text-transform: lowercase;
+}
+
+@media(max-width: 800px){
+    .Navbar{
+        flex-direction: column-reverse;
+
+    }
+    .div1, .div2{
+        flex: 100%;
+    }
+   
 }
