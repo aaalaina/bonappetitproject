@@ -6,6 +6,8 @@ import { shopProducts } from '../data';
 import { Splide, SplideSlide } from '@splidejs/react-splide';
 import '@splidejs/react-splide/css';
 import { mobile, tablet } from '../responsive';
+import Navbar from '../Components/navbarstuff/navbar';
+import Footer from '../Components/footerstuff/footer';
 
 const Container = styled.div`
 padding-right:30px;
@@ -15,6 +17,7 @@ margin:auto;
 grid-template-columns:1fr 1fr;
 grid-row-gap:50px;
 grid-column-gap:50px;
+padding-bottom:100px;
 
 ${mobile({display:"flex",flexWrap:"wrap",paddingLeft:"10px",paddingRight:"10px"})}
 ${tablet({display:"flex",flexWrap:"wrap",paddingLeft:"20px",paddingRight:"20px"})}
@@ -52,8 +55,9 @@ const Shop = () => {
   
   
     return (
+      
     <div> 
-        
+        <Navbar/>
          <Splide options={ { 
             rewind: true,
             height: "300px",
@@ -85,6 +89,7 @@ const Shop = () => {
 
         ))}
         </Container>
+        <Footer/>
     </div>
   )
 }
