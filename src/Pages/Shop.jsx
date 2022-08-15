@@ -2,22 +2,22 @@ import styled from "styled-components";
 // import React, { useEffect, useState } from 'react'
 // import axios from 'axios'
 import ShopProducts from "../Components/ShopProducts";
-import { shopProducts } from "../data";
-import { Splide, SplideSlide } from "@splidejs/react-splide";
-import "@splidejs/react-splide/css";
-import { mobile, tablet } from "../responsive";
-import Navbar from "../Components/navbarstuff/navbar";
-import Footer from "../Components/footerstuff/footer";
+import { shopProducts } from '../data';
+import { Splide, SplideSlide } from '@splidejs/react-splide';
+import '@splidejs/react-splide/css';
+import { mobile, tablet } from '../responsive';
+import Navbar from '../Components/navbarstuff/navbar';
+import Footer from '../Components/footerstuff/footer';
 
 const Container = styled.div`
-  padding-right: 30px;
-  padding-left: 30px;
-  display: grid;
-  margin: auto;
-  grid-template-columns: 1fr 1fr;
-  grid-row-gap: 50px;
-  grid-column-gap: 50px;
-  padding-bottom: 4rem;
+padding-right:30px;
+padding-left:30px;
+display:grid;
+margin:auto;
+grid-template-columns:1fr 1fr;
+grid-row-gap:50px;
+grid-column-gap:50px;
+padding-bottom:100px;
 
   ${mobile({
     display: "flex",
@@ -51,47 +51,42 @@ const Title = styled.h1`
 const Shop = () => {
   // const [shopProducts, showShop] = useState([]);
 
-  // useEffect(() => {
-  //   axios.get('http://localhost:3000/shop').then(
-  //     (response) => {
-  //       showShop(response.data);
-  //     }
-  //   );
-  // }, []);
-
-  return (
-    <div>
-      <Navbar />
-      <Splide
-        options={{
-          rewind: true,
-          height: "300px",
-          width: "100%",
-          object: "fit-cover",
-          autoplay: true,
-          interval: 3000,
-        }}
-        aria-label="React Splide"
-      >
-        <SplideSlide>
-          <img
-            src="https://images.unsplash.com/photo-1606787366850-de6330128bfc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
-            alt="slide 1"
-          />
-        </SplideSlide>
-        <SplideSlide>
-          <img
-            src="https://images.unsplash.com/photo-1534533983688-c7b8e13fd3b6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
-            alt="slide 2"
-          />
-        </SplideSlide>
-        <SplideSlide>
-          <img
-            src="https://images.unsplash.com/photo-1553499944-3cea7081e412?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
-            alt="slide  3"
-          />
-        </SplideSlide>
-      </Splide>
+    // useEffect(() => {
+    //   axios.get('http://localhost:3000/shop').then(
+    //     (response) => {
+    //       showShop(response.data);
+    //     }
+    //   );
+    // }, []);
+  
+  
+  
+    return (
+      
+    <div> 
+        <Navbar/>
+         <Splide options={ { 
+            rewind: true,
+            height: "300px",
+            width:"100%",
+            object:'fit-cover',
+            autoplay:true,
+            interval:3000,
+            
+        
+        
+        } } aria-label="React Splide">
+      <SplideSlide>
+        <img src="https://images.unsplash.com/photo-1606787366850-de6330128bfc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80" alt="slide 1"/>
+      </SplideSlide>
+      <SplideSlide>
+        <img src="https://images.unsplash.com/photo-1534533983688-c7b8e13fd3b6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80" alt="slide 2"/>
+      </SplideSlide>
+      <SplideSlide>
+        <img src="https://images.unsplash.com/photo-1553499944-3cea7081e412?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80" alt="slide  3"/>
+      </SplideSlide>
+    </Splide>
+       
 
       <Title>Shopping</Title>
 
@@ -99,8 +94,8 @@ const Shop = () => {
         {shopProducts.map((item) => (
           <ShopProducts item={item} key={item.id} />
         ))}
-      </Container>
-      <Footer />
+        </Container>
+        <Footer/>
     </div>
   );
 };

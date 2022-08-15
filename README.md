@@ -68,3 +68,6 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+### About the Project
+This is the work of group 1's redesign project team and it consists of Pagines Her, Shahed Hassan, Oscar Hernandez-Viquez, Matthew Trigo, and myself, Alaina Harris. I acted as team leader for this project and we split up into two groups of three: three for front-end work and three for back-end work. 
