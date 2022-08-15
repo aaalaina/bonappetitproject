@@ -1,44 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Faustina&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Faustina&family=Jost:wght@300&display=swap");
+
 * {
-    text-decoration: none;
-    list-style: none;
-    color: inherit;
+  text-decoration: none;
+  list-style: none;
+  color: inherit;
+}
+
+.Navbar {
+  color: #ffff;
+  background-color: #000;
+  font: small-caps bold large "Jost", sans-serif;
+
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.div1 {
+  width: 50%;
+}
+
+.div1-ul {
+  display: flex;
+  flex-direction: row;
+  gap: 5%;
+}
+
+.Navbar .div2 {
+  width: 50%;
+  font: 2rem "Faustina", serif;
+  text-transform: lowercase;
+}
+
+@media (max-width: 800px) {
+  .Navbar {
+    flex-direction: column-reverse;
   }
-@import url('https://fonts.googleapis.com/css2?family=Faustina&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Faustina&family=Jost:wght@300&display=swap');
-.Navbar{
-color: #ffff;
-background-color: #000;
-font: small-caps bold large 'Jost', sans-serif;
-
-width: 100%;
-/* height: 80px; */
-display: flex;
-align-items: center;
-justify-content: center;
-}
-
-
-.div1{
-    flex: 50%;
-}
-.div1-ul{
-    display: flex;
-    flex-direction: row;
-    gap: 5%;
-}
-.Navbar .div2{
-    flex: 50%;
-    font: 2rem 'Faustina', serif;
-    text-transform: lowercase;
-}
-
-@media(max-width: 800px){
-    .Navbar{
-        flex-direction: column-reverse;
-
-    }
-    .div1, .div2{
-        flex: 100%;
-    }
-   
+  .div1 {
+    width: 100%;
+  }
+  
+  .div1-ul {
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 1rem 0 2rem 0;
+  }
+  .div2 {
+    width: 100%;
+    text-align: center;
+  }
 }
