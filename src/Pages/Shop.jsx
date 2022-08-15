@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 // import React, { useEffect, useState } from 'react'
 // import axios from 'axios'
 import ShopProducts from "../Components/ShopProducts";
@@ -19,30 +19,37 @@ grid-row-gap:50px;
 grid-column-gap:50px;
 padding-bottom:100px;
 
-${mobile({display:"flex",flexWrap:"wrap",paddingLeft:"10px",paddingRight:"10px"})}
-${tablet({display:"flex",flexWrap:"wrap",paddingLeft:"20px",paddingRight:"20px"})}
-`
+  ${mobile({
+    display: "flex",
+    flexWrap: "wrap",
+    paddingLeft: "10px",
+    paddingRight: "10px",
+  })}
+  ${tablet({
+    display: "flex",
+    flexWrap: "wrap",
+    paddingLeft: "20px",
+    paddingRight: "20px",
+  })}
+`;
 const Title = styled.h1`
-font-size:40px; 
-font-weight:700;  
-letter-spacing:1px;  
-width:160px; 
-text-align:center; 
-margin:auto;
-white-space:nowrap; 
-padding-top:10px;
-padding-bottom:10px;
-margin-bottom:30px;
-margin-top:30px;
-border-bottom: 5px solid #CCD3FF;
-border-top: 5px solid #ffe54c;
-`
-
+  font-size: 40px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  width: 160px;
+  text-align: center;
+  margin: auto;
+  white-space: nowrap;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  border-bottom: 5px solid #ccd3ff;
+  border-top: 5px solid #ffe54c;
+`;
 
 const Shop = () => {
-  
-  
-    // const [shopProducts, showShop] = useState([]);
+  // const [shopProducts, showShop] = useState([]);
 
     // useEffect(() => {
     //   axios.get('http://localhost:3000/shop').then(
@@ -83,15 +90,14 @@ const Shop = () => {
 
       <Title>Shopping</Title>
 
-        <Container>
+      <Container>
         {shopProducts.map((item) => (
           <ShopProducts item={item} key={item.id} />
-
         ))}
         </Container>
         <Footer/>
     </div>
-  )
-}
+  );
+};
 
-export default Shop
+export default Shop;
